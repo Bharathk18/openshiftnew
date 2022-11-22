@@ -12,6 +12,12 @@ public class OpenShiftDemoNewApplication {
 		return "hello, This is my first application deployed in openshift containers";
 	}
 	
+	@GetMapping("/openshift")
+	public String openshift() {
+		return "openshift application deployed successfully";
+	}
+	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(OpenShiftDemoNewApplication.class, args);
 	}
